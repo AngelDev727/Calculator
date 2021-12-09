@@ -1,0 +1,95 @@
+/* design for buttons */
+.button {
+    display: inline-flex;
+    width: 25%;
+    flex: 1 0 auto;
+}
+
+/* button width */
+.button.wide {
+    width: 25%;
+}
+
+.button button {
+    background-color: rgb(165, 165, 165);
+    border: 0;
+    font-size: 12px;
+    margin: 10px 10px 10px 10px;
+    flex: 1 0 auto;
+    padding: 0;
+    display: block;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+/* hover fade effect to light grey buttons */
+.button button:hover {
+    background-color: #E0E0E0;
+} 
+
+.button:last-child button {
+    margin-right: 10px;
+}
+
+/* specific orange buttons */
+.button.orange button {
+    background-color: rgba(246, 153, 2, 0.993);
+    color: white;
+    transition: 0.5s;
+}
+
+/* hover fade effect to orange button */
+.button.orange button:hover {
+    background-color: rgba(248, 204, 133, 0.993);
+    color: white;
+}
+
+/* specific charcoal buttons */
+.button.charcoal button {
+    background-color: rgba(70, 69, 69, 0.993);
+    color: white;
+    transition: 0.5s;
+}
+
+/* hover fade effect to charcoal button */
+.button.charcoal button:hover {
+    background-color: rgba(145, 144, 144, 0.993);
+    color: white;
+}
+
+/* responsiveness for screen sizes */
+@media (min-width: 200px) and (min-height: 200px) {
+    .button button {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 300px) and (min-height: 300px) {
+    .button button {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 400px) and (min-height: 400px) {
+    .button button {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 500px) and (min-height: 500px) {
+    .button button {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 600px) and (min-height: 600px) {
+    .button button {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 800px) and (min-height: 800px) {
+    .button button {
+        font-size: 70px;
+    }
+}
